@@ -1,9 +1,10 @@
-# Aploze Integration Example
+# Aploze Integration Examples
 
-This is a working example that contains:
+Here some working examples :
 
-- The Aploze JS tag: https://docs.aploze.com/developer/tag
-- The Aploze HTML Gallery Widget: https://docs.aploze.com/developer/widgets/gallery
-- The use of Aploze Events: https://docs.aploze.com/developer/js-sdk/events
+- [/gallery-widget](Basic Integration (TAG + Gallery Widget))
+- [/gallery-widget-with-css](Gallery Widget CSS Customization)
+- [/gallery-widget-with-darkmode](Gallery Widget in dark mode)
+- [/gallery-widget-with-events](Gallery Widget With JS Events)
 
 For more informations, go to Aploze documentation: https://docs.aploze.com/
