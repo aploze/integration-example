@@ -1,88 +1,91 @@
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="X-UA-Compatible" http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="X-UA-Compatible"
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
     <title>Aploze Gallery Widget with css</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu,
-                roboto, noto, arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+          segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial,
+          sans-serif;
+      }
 
-        /*-- Use of Aploze GALLERY WIDGET CSS CLASSES (see https://docs.aploze.com/developer/widgets/gallery#css-classes) --*/
+      /*-- Use of Aploze GALLERY WIDGET CSS CLASSES (see https://docs.aploze.com/getting-started/live-shopping/widgets#the-gallery-widget#css-classes) --*/
 
-        .aploze-gallery .aploze-gallery-card-time,
-        .aploze-gallery .aploze-gallery-ended-title,
-        .aploze-gallery .aploze-gallery-card-title {
-            color: #2e2d2d;
-            text-transform: capitalize;
-        }
+      .aploze-gallery .aploze-gallery-card-time,
+      .aploze-gallery .aploze-gallery-ended-title,
+      .aploze-gallery .aploze-gallery-card-title {
+        color: #2e2d2d;
+        text-transform: capitalize;
+      }
 
-        .aploze-gallery .aploze-gallery-card-title {
-            font-size: 24px;
-        }
+      .aploze-gallery .aploze-gallery-card-title {
+        font-size: 24px;
+      }
 
-        .aploze-gallery .aploze-gallery-card-time {
-            font-size: 15px;
-        }
+      .aploze-gallery .aploze-gallery-card-time {
+        font-size: 15px;
+      }
 
-        .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-time {
-            font-size: 12px;
-        }
+      .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-time {
+        font-size: 12px;
+      }
 
-        .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-title {
-            font-size: 32px;
-        }
+      .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-title {
+        font-size: 32px;
+      }
 
-        .aploze-gallery .aploze-gallery-card-time,
-        .aploze-gallery .aploze-gallery-card-btn,
-        .aploze-gallery .aploze-gallery-card-img-wrap,
-        .aploze-gallery .aploze-gallery-card-img {
-            border-radius: 0px;
-        }
+      .aploze-gallery .aploze-gallery-card-time,
+      .aploze-gallery .aploze-gallery-card-btn,
+      .aploze-gallery .aploze-gallery-card-img-wrap,
+      .aploze-gallery .aploze-gallery-card-img {
+        border-radius: 0px;
+      }
 
-        .aploze-gallery .aploze-gallery-card-btn,
-        .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-time {
-            background-color: #2e2d2d;
-            color: #fff;
-            text-transform: uppercase;
-        }
+      .aploze-gallery .aploze-gallery-card-btn,
+      .aploze-gallery .aploze-gallery-card-big .aploze-gallery-card-time {
+        background-color: #2e2d2d;
+        color: #fff;
+        text-transform: uppercase;
+      }
 
-        .aploze-gallery .aploze-gallery-card-btn {
-            font-size: 11px;
-            letter-spacing: 1px;
-            transition: all .2s;
-            transition-property: all;
-            transition-duration: 0.2s;
-            transition-timing-function: ease;
-            transition-delay: 0s;
-        }
+      .aploze-gallery .aploze-gallery-card-btn {
+        font-size: 11px;
+        letter-spacing: 1px;
+        transition: all 0.2s;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
 
-        .aploze-gallery .aploze-gallery-card-btn:hover {
-            box-shadow: 4px 4px 0 -2px #fff, 4px 4px 0 0 #2e2d2d;
-            opacity: 1;
-        }
+      .aploze-gallery .aploze-gallery-card-btn:hover {
+        box-shadow: 4px 4px 0 -2px #fff, 4px 4px 0 0 #2e2d2d;
+        opacity: 1;
+      }
     </style>
     <script>
-        /*-- Aploze JS TAG (see https://docs.aploze.com/developer/tag) --*/
-        (function () {
-            var aplz = document.createElement("script");
-            aplz.type = "text/javascript";
-            aplz.async = true;
-            aplz.src = "https://js.aploze.com/v1.js?key=evsTKDiJD3cN5YQpjmQ8";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(aplz, s);
-        })();
+      /*-- Aploze JS TAG (see https://docs.aploze.com/developer/tag) --*/
+      (function () {
+        var aplz = document.createElement("script");
+        aplz.type = "text/javascript";
+        aplz.async = true;
+        aplz.src = "https://js.aploze.com/v1.js?key=evsTKDiJD3cN5YQpjmQ8";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(aplz, s);
+      })();
     </script>
-</head>
+  </head>
 
-<body>
-    <!-- Aploze HTML GALLERY WIDGET (See https://docs.aploze.com/developer/widgets/gallery) -->
+  <body>
+    <!-- Aploze HTML GALLERY WIDGET (See https://docs.aploze.com/getting-started/live-shopping/widgets#the-gallery-widget) -->
 
     <div class="aploze-widget" data-type="gallery"></div>
-</body>
-
+  </body>
 </html>
